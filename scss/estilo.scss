@@ -1,0 +1,625 @@
+@import "variables";
+
+@import "header";
+
+nav {
+  div {
+    div {
+      ul {
+        li {
+          a {
+            transition: 0.5s;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tituloPag {
+  margin: 1rem;
+  padding-left: 5px;
+  font-size: 2.5rem;
+  border-left: 5px solid $color-principal;
+}
+
+.parrafo {
+  margin: 0.5rem;
+  padding: 3pt;
+  font-size: 10pt;
+  text-align: justify;
+}
+
+h3 {
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+}
+
+h4 {
+  text-align: left;
+  color: black;
+  font-size: larger;
+}
+
+.logo_wapp {
+  position: fixed;
+  right: 20px;
+  bottom: 200px;
+  opacity: 70%;
+
+  img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+@import "footer";
+
+/***** GENERALES EXCLUSIVOS DE INDEX *****/
+
+.sectores {
+  margin-top: 2px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.caja {
+  margin: 5px;
+  padding: 5px;
+  width: 150px;
+  border: 1px solid $color-principal;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 3px 3px 10px;
+}
+
+.pSector {
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.caja {
+  h3 {
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.img {
+  padding: 5pt;
+  display: flex;
+  justify-content: center;
+}
+
+/***** GENERALES EXCLUSIVOS DE NOSOTROS *****/
+
+.parrafo1 {
+  grid-area: parrafo1;
+  margin: 0.5rem;
+  padding: 3pt;
+  height: auto;
+  width: auto;
+  text-align: justify;
+}
+
+.parrafo2 {
+  grid-area: parrafo2;
+  margin: 0.5rem;
+  padding: 3pt;
+  height: auto;
+  width: auto;
+  text-align: justify;
+}
+
+.imagen1 {
+  grid-area: imagen1;
+  border: 2px solid $color-principal;
+  box-shadow: 2px 2px 8px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.imagen2 {
+  grid-area: imagen2;
+  border: 2px solid $color-principal;
+  box-shadow: 2px 2px 8px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-areas:
+    "parrafo1 parrafo1 imagen1"
+    "imagen2 parrafo2 parrafo2";
+  gap: 15px;
+}
+
+/***** GENERALES EXCLUSIVOS DE SERVICIOS *****/
+
+.rubroServ {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.cajaServ {
+  margin: 10px;
+  padding: 10px;
+  height: 160px;
+  width: 160px;
+  border: 1px solid $color-principal;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 3px 3px 10px;
+
+  h3 {
+    padding-bottom: 3px;
+    text-align: center;
+  }
+}
+
+.parrafoServ1 {
+  grid-area: parrafoServ1;
+  padding: 3pt;
+  margin: 0.5rem;
+  font-size: 10pt;
+  text-align: justify;
+}
+
+.parrafoServ2 {
+  grid-area: parrafoServ2;
+  padding: 3pt;
+  margin: 0.5rem;
+  font-size: 10pt;
+  text-align: justify;
+}
+
+.parrafoServ3 {
+  grid-area: parrafoServ3;
+  padding: 3pt;
+  margin: 0.5rem;
+  font-size: 10pt;
+  text-align: justify;
+}
+
+.imgsrv {
+  grid-area: imgsrv;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 2px solid $color-principal;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  justify-self: center;
+}
+
+.videosrv {
+  grid-area: videosrv;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 2px solid $color-principal;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  width: fit-content;
+  justify-self: center;
+}
+
+.gridPadreServ {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "parrafoServ1 parrafoServ1 parrafoServ1"
+    "imgsrv imgsrv imgsrv"
+    "parrafoServ2 parrafoServ2 parrafoServ2"
+    "videosrv videosrv videosrv"
+    "parrafoServ3 parrafoServ3 parrafoServ3"
+    "clientes clientes clientes";
+}
+
+aside {
+  grid-area: clientes;
+  padding-top: 15px;
+  border-top: 2px solid $color-principal;
+  width: 700px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  h3 {
+    text-align: center;
+    padding-bottom: 7px;
+    color: $color-principal;
+    text-transform: uppercase;
+  }
+}
+
+/***** GENERALES EXCLUSIVOS DE FAQ's *****/
+
+.faq {
+  padding: 5px;
+}
+
+.faqLista {
+  margin-left: 30px;
+}
+
+.faqPregunta {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faqRespuesta {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  font-size: 1.4rem;
+  font-style: oblique;
+  text-align: justify;
+}
+
+.faqContacto {
+  margin: 35px;
+  padding: 5px;
+  border: 2px solid $color-principal;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+/***** GENERALES EXCLUSIVOS DE CONTACTO *****/
+
+.contenedor {
+  background: #24303c;
+  width: 430px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px #000;
+
+  h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+  }
+}
+
+.campo {
+  width: 95%;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid $color-principal;
+  font-size: 16px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &:focus {
+    height: 40px;
+  }
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  background: linear-gradient(to right top, $color-principal, #fffde4);
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
+}
+
+.datos {
+  grid-area: direccion;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-self: center;
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.pContacto {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 10pt;
+  border: 1px double $color-principal;
+}
+
+#contacto {
+  grid-area: formulario;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.parrafoCont {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gridPadreCont {
+  display: grid;
+  grid-template-areas:
+    "formulario"
+    "direccion";
+}
+
+/*********************************************************************** DISEÑO RESPONSIVE ***************/
+
+/***************************************************** MEDIDAS QUERY PARA TABLETA */
+@media (min-width: 700px) and (max-width: 1100px) {
+  //************************************************************index.html
+  .sectores {
+    flex-wrap: wrap;
+  }
+
+  .logo_wapp {
+    position: fixed;
+    right: 10px;
+    top: 50px;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  //************************************************************quienes-somos.html
+  .gridPadre {
+    grid-template-areas:
+      "parrafo1"
+      "imagen1"
+      "parrafo2"
+      "imagen2";
+  }
+
+  .imagenQs {
+    display: flex;
+    justify-content: center;
+  }
+
+  //************************************************************servicios.html
+  .rubroServ {
+    flex-wrap: wrap;
+  }
+
+  .gridPadreServ {
+    grid-template-areas:
+      "parrafoServ1"
+      "imgsrv"
+      "parrafoServ2"
+      "videosrv"
+      "parrafoServ3"
+      "clientes";
+  }
+
+  aside {
+    width: 600px;
+  }
+
+  //************************************************************contacto.html
+  .gridPadreCont {
+    grid-template-areas:
+      "formulario"
+      "direccion";
+  }
+
+  #contacto {
+    justify-self: center;
+    padding-bottom: 20px;
+  }
+
+  .pContacto {
+    font-size: 10pt;
+  }
+}
+
+/***************************************************** MEDIDAS QUERY PARA CELULAR */
+@media (min-width: 451px) and (max-width: 699px) {
+  .tituloPag {
+    padding-top: 3px;
+    font-size: 2rem;
+  }
+
+  .logo_wapp {
+    position: fixed;
+    right: 10px;
+    top: 40px;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  //************************************************************index.html
+  .sectores {
+    flex-wrap: wrap;
+  }
+  //************************************************************quienes-somos.html
+  .gridPadre {
+    grid-template-areas:
+      "parrafo1"
+      "imagen1"
+      "parrafo2"
+      "imagen2";
+  }
+
+  .imagenQs {
+    display: flex;
+    justify-content: center;
+  }
+
+  //************************************************************servicios.html
+  .rubroServ {
+    flex-wrap: wrap;
+  }
+
+  .gridPadreServ {
+    grid-template-areas:
+      "parrafoServ1"
+      "imgsrv"
+      "parrafoServ2"
+      "videosrv"
+      "parrafoServ3"
+      "clientes";
+  }
+
+  aside {
+    width: 400px;
+  }
+
+  //************************************************************faq.html
+  .faqPregunta {
+    margin-bottom: 2px;
+    font-size: 10pt;
+  }
+
+  .faqRespuesta {
+    padding-top: 0;
+    padding-bottom: 5px;
+    font-size: 9pt;
+  }
+
+  .faqContacto {
+    font-size: 10pt;
+  }
+
+  //************************************************************contacto.html
+  .gridPadreCont {
+    grid-template-areas:
+      "formulario"
+      "direccion";
+  }
+
+  #contacto {
+    justify-self: center;
+    padding-bottom: 20px;
+  }
+
+  .pContacto {
+    font-size: 10pt;
+  }
+}
+
+/***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
+@media (max-width: 450px) {
+  .tituloPag {
+    padding-top: 3px;
+    font-size: 1.8rem;
+  }
+
+  .logo_wapp {
+    position: fixed;
+    right: 10px;
+    top: 40px;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  //************************************************************index.html
+  .sectores {
+    flex-wrap: wrap;
+  }
+
+  //************************************************************quienes-somos.html
+  .gridPadre {
+    grid-template-areas:
+      "parrafo1"
+      "imagen1"
+      "parrafo2"
+      "imagen2";
+  }
+
+  .imagenQs {
+    display: flex;
+    justify-content: center;
+  }
+
+  //************************************************************servicios.html
+  .rubroServ {
+    flex-wrap: wrap;
+  }
+
+  .gridPadreServ {
+    grid-template-areas:
+      "parrafoServ1"
+      "imgsrv"
+      "parrafoServ2"
+      "videosrv"
+      "parrafoServ3"
+      "clientes";
+  }
+
+  .videosrv {
+    iframe {
+      width: auto;
+    }
+  }
+  aside {
+    width: 300px;
+  }
+
+  //************************************************************contacto.html
+  .animate__bounceIn {
+    width: 90vw;
+  }
+
+  .gridPadreCont {
+    grid-template-areas:
+      "formulario"
+      "direccion";
+  }
+
+  #contacto {
+    justify-self: center;
+    padding-bottom: 20px;
+  }
+
+  .pContacto {
+    font-size: 10pt;
+  }
+}
