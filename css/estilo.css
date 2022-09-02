@@ -6,7 +6,7 @@
 html {
   font-size: 62.5%; }
 
-/* HEADER */
+/******************************************** HEADER *************************************************/
 #menu a {
   font-size: 1.8rem;
   font-weight: bold;
@@ -31,8 +31,8 @@ html {
     .header div p {
       font-size: 2rem; }
 
-/*********************************************************************** DISEÑO RESPONSIVE ***************/
-/***************************************************** MEDIDAS QUERY PARA CELULAR MINI*/
+/******************************************* DISEÑO RESPONSIVE PARA HEADER **********************************/
+/****************************************** MEDIDAS QUERY PARA CELULAR MINI**********************************/
 @media (max-width: 450px) {
   #menu a {
     font-size: 1.5rem;
@@ -57,6 +57,8 @@ html {
       .header div p {
         font-size: 1.5rem; } }
 
+/************************************** FIN DISEÑO RESPONSIVE DE HEADER **************************************/
+/************************************ ESTILO GENERAL DEL SITIO ************************************/
 nav div div ul li a {
   transition: 0.5s; }
   nav div div ul li a:hover {
@@ -74,16 +76,15 @@ nav div div ul li a {
   font-size: 10pt;
   text-align: justify; }
 
-h3 {
+h3, h4 {
   text-align: left;
   color: black;
   font-weight: bold;
-  font-size: medium; }
+  font-size: 1.5rem; }
 
 h4 {
-  text-align: left;
-  color: black;
-  font-size: larger; }
+  text-align: center;
+  padding-bottom: 20px; }
 
 .logo_wapp {
   position: fixed;
@@ -94,21 +95,10 @@ h4 {
     width: 60px;
     height: auto; }
 
-/* FOOTER */
-.container-fluid footer div {
-  font-size: 1.5rem; }
-  .container-fluid footer div span {
-    color: white; }
-    .container-fluid footer div span a {
-      color: white; }
-
-.container-fluid footer ul li a {
-  color: white; }
-
-/***** GENERALES EXCLUSIVOS DE INDEX *****/
+/****************************** GENERALES EXCLUSIVOS DE INDEX **************************************/
 .sectores {
   margin-top: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-evenly; }
 
@@ -126,7 +116,7 @@ h4 {
   padding-top: 2px;
   padding-bottom: 5px; }
 
-.caja h3 {
+.caja h3, .caja h4 {
   padding-bottom: 2px;
   display: flex;
   justify-content: center; }
@@ -136,7 +126,7 @@ h4 {
   display: flex;
   justify-content: center; }
 
-/***** GENERALES EXCLUSIVOS DE NOSOTROS *****/
+/****************************** GENERALES EXCLUSIVOS DE NOSOTROS *************************************/
 .parrafo1 {
   grid-area: parrafo1;
   margin: 0.5rem;
@@ -172,7 +162,7 @@ h4 {
   grid-template-areas: "parrafo1 parrafo1 imagen1" "imagen2 parrafo2 parrafo2";
   gap: 15px; }
 
-/***** GENERALES EXCLUSIVOS DE SERVICIOS *****/
+/************************************ GENERALES EXCLUSIVOS DE SERVICIOS ***********************************/
 .rubroServ {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -191,7 +181,7 @@ h4 {
   text-align: center;
   font-size: 12px;
   box-shadow: 3px 3px 10px; }
-  .cajaServ h3 {
+  .cajaServ h3, .cajaServ h4 {
     padding-bottom: 3px;
     text-align: center; }
 
@@ -228,13 +218,13 @@ h4 {
 
 .videosrv {
   grid-area: videosrv;
+  width: fit-content;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px;
   border: 2px solid #007bff;
   border-radius: 10px;
   box-shadow: 3px 3px 10px;
-  width: fit-content;
   justify-self: center; }
 
 .gridPadreServ {
@@ -251,14 +241,15 @@ aside {
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto; }
-  aside h3 {
-    text-align: center;
-    padding-bottom: 7px;
+  margin: auto;
+  /* MAP-GET */ }
+  aside h3, aside h4 {
     color: #007bff;
+    font-size: 1.8rem;
+    text-align: center;
     text-transform: uppercase; }
 
-/***** GENERALES EXCLUSIVOS DE FAQ's *****/
+/************************************* GENERALES EXCLUSIVOS DE FAQ's ****************************************/
 .faq {
   padding: 5px; }
 
@@ -288,7 +279,7 @@ aside {
   font-weight: bold;
   font-size: 11pt; }
 
-/***** GENERALES EXCLUSIVOS DE CONTACTO *****/
+/************************************ GENERALES EXCLUSIVOS DE CONTACTO **************************************/
 .contenedor {
   background: #24303c;
   width: 430px;
@@ -297,7 +288,7 @@ aside {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 7px 13px 37px #000; }
-  .contenedor h3 {
+  .contenedor h3, .contenedor h4 {
     font-size: 22px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -338,7 +329,7 @@ aside {
   padding-top: 30px;
   padding-bottom: 30px;
   justify-self: center; }
-  .datos h3 {
+  .datos h3, .datos h4 {
     font-size: 2rem;
     text-align: center;
     margin-top: 20px; }
@@ -475,13 +466,16 @@ aside {
   .pContacto {
     font-size: 10pt; } }
 
+/************************************ FIN ESTILO GENERAL DE DOCUMENTO ************************************/
 /* FOOTER */
 .container-fluid footer div {
   font-size: 1.5rem; }
   .container-fluid footer div span {
     color: white; }
     .container-fluid footer div span a {
-      color: white; }
+      color: white;
+      font-weight: bold;
+      font-style: oblique; }
 
 .container-fluid footer ul li a {
   color: white; }
