@@ -1,9 +1,22 @@
 /* FOOTER */
 
-.container {
-    footer {
-        div {
-            font-size: 1.5rem;
+.container-fluid {
+  footer {
+    div {
+      font-size: 1.5rem;
+      span {
+        color: white;
+        a {
+          color: white;
         }
+      }
     }
+    ul {
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
 }
